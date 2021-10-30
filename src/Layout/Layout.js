@@ -6,6 +6,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Title from "./Title";
 import Main from "./Main";
 import AddItenary from "./AddItenary";
+import Itenary from "./Itenary";
+
+
 const Layout = () => {
 	return (
 		<Router>
@@ -18,8 +21,11 @@ const Layout = () => {
 							<Route exact path="/">
 								<Main />
 							</Route>
-							<Route  path="/add">
+							<Route path="/add">
 								<AddItenary />
+							</Route>
+							<Route path="/itenary/:id">
+								<Itenary />
 							</Route>
 						</Switch>
 					</div>

@@ -1,10 +1,14 @@
 /** @format */
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 function AddItenary() {
 	return (
 		<div>
+			<Link to="/">
+				<p className="text-blue-700 font-normal mb-1">Go Back</p>
+			</Link>
 			<h3 className="font-bold text-lg mb-1 mx-5">New Itenary</h3>
 			<form>
 				<div className="flex">
