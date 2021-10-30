@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import Itenaries from "../Components/Itenaries";
-function Main() {
+import Title from "./Title";
+const Main = () => {
 	const itenaryList = [
 		{
 			id: 1,
@@ -24,17 +25,18 @@ function Main() {
 
 	const [itenaryData, setItenaryData] = useState(itenaryList);
 
-	// Remove Itenary
 
-	function deleteItenary(ItenaryId) {
+	// Remove Itenary
+	const deleteItenary = (ItenaryId) => {
 		const filteredItenaries = itenaryData.filter(
 			(itenary) => itenary.id !== ItenaryId
 		);
 		setItenaryData(filteredItenaries);
-	}
+	};
 	return (
 		<div>
 			<div className="w-full p-4">
+				
 				<ul>
 					{itenaryData.map((itenary) => (
 						<Itenaries
@@ -47,6 +49,6 @@ function Main() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default Main;

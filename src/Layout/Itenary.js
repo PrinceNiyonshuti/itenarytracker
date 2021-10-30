@@ -3,7 +3,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-function Itenary() {
+const Itenary=()=> {
 	const { id } = useParams();
 	return (
 		<div>

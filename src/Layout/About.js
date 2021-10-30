@@ -2,7 +2,7 @@
 
 import React from "react";
 
-function About() {
+const About = () => {
 	return (
 		<div className="mx-5">
 			<h3 className="font-bold text-lg mb-1 ">About Itenary Tracker</h3>
@@ -26,6 +26,6 @@ function About() {
 			</p>
 		</div>
 	);
-}
+};
 
 export default About;
