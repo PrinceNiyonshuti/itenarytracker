@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Itenaries from "../Components/Itenaries";
-import Title from "./Title";
+
 const Main = () => {
 	const itenaryList = [
 		{
