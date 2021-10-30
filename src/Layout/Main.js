@@ -25,7 +25,6 @@ const Main = () => {
 
 	const [itenaryData, setItenaryData] = useState(itenaryList);
 
-
 	// Remove Itenary
 	const deleteItenary = (ItenaryId) => {
 		const filteredItenaries = itenaryData.filter(
@@ -36,7 +35,6 @@ const Main = () => {
 	return (
 		<div>
 			<div className="w-full p-4">
-				
 				<ul>
 					{itenaryData.map((itenary) => (
 						<Itenaries
