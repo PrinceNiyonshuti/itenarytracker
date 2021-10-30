@@ -1,6 +1,7 @@
 /** @format */
 
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../Components/Button";
 const Title = () => {
 	return (
@@ -10,7 +11,9 @@ const Title = () => {
 					<h2 className="font-bold text-3xl mb-2">Itenary Tracker</h2>
 				</div>
 				<div className="w-1/2 flex justify-end overflow-hidden">
-					<Button name="Add" />
+					<Link to="/add">
+						<Button name="Add" />
+					</Link>
 				</div>
 			</div>
 		</div>
