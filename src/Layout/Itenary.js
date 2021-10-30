@@ -7,7 +7,8 @@ function Itenary() {
 	const { id } = useParams();
 	return (
 		<div>
-			<h3 className="font-bold text-lg mb-1 mx-5">Itenary Details - {id}</h3>
+			<h3 className="font-bold text-lg mb-1 mx-5">Itenary Details</h3>
+			{id}
 		</div>
 	);
 }
