@@ -7,8 +7,8 @@ import Title from "./Title";
 import Main from "./Main";
 import AddItenary from "./AddItenary";
 import Itenary from "./Itenary";
-import Footer from "./Footer"
-
+import Footer from "./Footer";
+import About from "./About";
 
 const Layout = () => {
 	return (
@@ -22,6 +22,9 @@ const Layout = () => {
 							<Route exact path="/">
 								<Main />
 							</Route>
+							<Route exact path="/about">
+								<About />
+							</Route>
 							<Route path="/add">
 								<AddItenary />
 							</Route>
@@ -29,7 +32,7 @@ const Layout = () => {
 								<Itenary />
 							</Route>
 						</Switch>
-						<Footer/>
+						<Footer />
 					</div>
 				</div>
 			</div>
